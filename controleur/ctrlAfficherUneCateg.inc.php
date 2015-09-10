@@ -7,7 +7,7 @@
     if ($connexion) {
         $listeCateg= getListeCategoriesProduits($connexion);
         if (isset($_GET["id"])){
-            $listeProduits = getListeProduitsParCateg($connexion, "bul");
+            $listeProduits = getListeProduitsParCateg($connexion, $_GET["id"]);
             $ok = true;
         }
     }
