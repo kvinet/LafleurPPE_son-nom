@@ -6,7 +6,7 @@ echo "<h3>Liste des produits</h3>\n";
     echo "<table>\n";
     echo "<tr><th >designation</th><th>prix</th><th>image</th></tr>\n";
     // pour chaque enregistrement
-    for ($i=1; $i < count($listeProduits) ; $i++) {
+    for ($i=0; $i < count($listeProduits) ; $i++) {
         $produit= $listeProduits[$i];
         echo "<tr>\n";
         // première colonne, nom du produit
